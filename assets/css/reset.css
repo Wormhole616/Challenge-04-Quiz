@@ -1,0 +1,29 @@
+/* FILEPATH: /C:/Users/Gustavo/bootcamp/Challenge-04/Challenge-04-Quiz/assets/css/style.css */
+
+/* Reset default styles */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background color and font styles */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style the main content */
+p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin: 20px;
+}

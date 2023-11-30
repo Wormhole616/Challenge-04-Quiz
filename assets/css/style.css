@@ -1,0 +1,106 @@
+
+--mainColor: beige;
+--bodycolor: yellow;
+
+
+
+
+
+:root {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f2f2f2;
+    color:var(--bodycolor);
+    display: flex;
+    flex-direction: column;
+
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    color:var(--mainColor);
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden
+{
+    display: none !important;
+}   
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: blue;
+    color: white;
+    transition:background-color 0.2s ease-in-out;
+    border-radius: 5px;
+    padding: 5px;
+}
+button:hover {
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    max-width: 625px;
+
+}
+
+main section h1 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+main section h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+main section p {
+    font-size: 16px;
+    margin: 20px;
+}   
+
+main #questionNumberBox {
+    font-size: 16px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+
     
     <title>My Pop Quiz</title>
 </head>
@@ -25,19 +29,28 @@
             <div id="answer_list"></div>
             <div id="answer_feedback"></div>
         </section>
+        <div id = "questionsNumberBox"></div>
+
         
-        <div id="getNamePage" class="page hidden">
+        <section id="getNamePage" class="page hidden">
             <h2>Quiz Over!</h2>
             <p>Your score is <span id="display_score"></span>.</p>
             <form>
                 <label for="name">Enter your name:</label>
                 <input type="text" id="name" name="name" placeholder="Your name here">
                 <button id="submit">Submit</button>
+            </form>
+        </section>
 
-          
+        <section id="highscorePage" class="page hidden">
+            <h2>Highscores</h2>
+            <ol id="highscores"></ol>
+            <button id="goBack">Go Back</button>
+            <button id="clearHighscores">Clear Highscores</button>
+        </section>
+                 
 
     </main>
     
-    <h1>Hello, world!</h1>
-    <p>This is my HTML file.</p>
+    
 </body>

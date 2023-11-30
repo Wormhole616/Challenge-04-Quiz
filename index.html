@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Pop Quiz</title>
+</head>
+<body>
+    <header>
+        <a id = "highscore_tracker" href="#">View Highscores</a>
+        <span id ="time"> Time: <span id = "display_time">0</span></span>
+    </header>
+
+    <main>
+        <section id="pageinit" class="page">
+            <h1>Quiz Challenge</h1>
+            <p>Answer the following questions, every incorrect will decrease your score. You have 10 secs.</p>
+            <button id="start">Bring it on!</button>
+        </section>
+
+        <section id="questionPage" class="page hidden">
+            <h2 id="display_question"></h2>
+            <div id="answer_list"></div>
+            <div id="answer_feedback"></div>
+        </section>
+        
+        <div id="getNamePage" class="page hidden">
+            <h2>Quiz Over!</h2>
+            <p>Your score is <span id="display_score"></span>.</p>
+            <form>
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name here">
+                <button id="submit">Submit</button>
+
+          
+
+    </main>
+    
+    <h1>Hello, world!</h1>
+    <p>This is my HTML file.</p>
+</body>

@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Quiz</title>
+    <link rel="shortcut icon" href="./assets/image/check.svg" type="image/svg">
 
-    
-    <title>My Pop Quiz</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
-        <a id = "highscore_tracker" href="#">View Highscores</a>
-        <span id ="time"> Time: <span id = "display_time">0</span></span>
+        <a id="highscorePage" href="#">View Highscores</a>
+        <span id="time">Time: <span id="display_time">0</span></span>
     </header>
 
     <main>
-        <section id="pageinit" class="page">
-            <h1>Quiz Challenge</h1>
-            <p>Answer the following questions, every incorrect will decrease your score. You have 10 secs.</p>
-            <button id="start">Bring it on!</button>
-        </section>
+        <section id="beginingPage" class="page">
+            <h1>Coding Quiz Challenge</h1>
 
-        <section id="questionPage" class="page hidden">
-            <h2 id="display_question"></h2>
-            <div id="answer_list"></div>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            
+            <button id="quizButton">Bring it On</button>
+        </section>
+        
+
+
+        <section id="question_page" class="page hidden">
+
+            <h2 id="display_quetion"></h2>
+
+            <div id="answerList"></div>
+
             <div id="answer_feedback"></div>
         </section>
-        <div id = "questionsNumberBox"></div>
+        <div id="questionsNumberBox"></div>
 
-        
+        <br>
+
         <section id="getNamePage" class="page hidden">
-            <h2>Quiz Over!</h2>
-            <p>Your score is <span id="display_score"></span>.</p>
-            <form>
-                <label for="name">Enter your name:</label>
-                <input type="text" id="name" name="name" placeholder="Your name here">
+            <h2>All done!</h2>
+
+            <p>Your final score is <span id="displayScore"></span>.</p>
+
+            <br>
+
+            <p>Enter your Name: 
+                <input type="text" name="name" id="nameInput">
                 <button id="submit">Submit</button>
-            </form>
+            </p>
         </section>
 
         <section id="highscorePage" class="page hidden">
             <h2>Highscores</h2>
-            <ol id="highscores"></ol>
+
+            <div id="highscore_list"></div>
+
             <button id="goBack">Go Back</button>
             <button id="clearHighscores">Clear Highscores</button>
+            <!-- <button class="play"></button> -->
         </section>
-                 
-
     </main>
-    
-    
+
+    <script src="./assets/js/script.js"></script>
 </body>
+</html>

@@ -22,9 +22,12 @@ What did I learn?
 
 
 ## Installation
-![creeshot of application] (images/screeshot1.png)
-![creeshot of application] (images/screeshot2.png)
+   ![screeshot1](https://github.com/Wormhole616/Challenge-04-Quiz/assets/144727575/3cbc4f94-70ad-40c8-8a4f-9468668ef78d)
 
+   
+   ![screeshot2](https://github.com/Wormhole616/Challenge-04-Quiz/assets/144727575/03fb012b-5960-474a-9b7f-b1dd85934a37)
+
+<img src = "assets/images/screeshot1.png>
 
 ## Usage
 
